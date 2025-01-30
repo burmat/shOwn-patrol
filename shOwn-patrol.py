@@ -57,7 +57,7 @@ def main(api_key, ips_list):
 			if host:
 				for data_obj in host['data']:
 					if 'vulns' in data_obj:
-						print(f'{ip_addr}: CVE entries discovered.')
+						print(f'[+] {ip_addr}: CVE entries discovered.')
 						for cve in data_obj['vulns']:
 							row += 1
 							cve_data = data_obj['vulns'][cve]
